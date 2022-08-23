@@ -25,9 +25,10 @@ A Middleware support Scratch3 communicate with Arduino by serial port
     - A3_R:讀取 A3 類比埠之電壓對應值 0-255
     - D4_R:讀取 D4 數位埠之電壓對應值 0 or 1
   - 寫入 Arduino port :
-    - D5_W:
-    - D6_W:
-    - D9_W:
-    - D7_W:
-    - D8_W:
+    - D5_W:寫入 D5 PWM 電壓對應值 0~255
+    - D6_W:寫入 D6 PWM 電壓對應值 0~255
+    - D9_W:寫入 D9 PWM 電壓對應值 0~255
+    - D7_W:寫入 D7 數位 電壓對應值 0 or 1
+    - D8_W:寫入 D7 數位 電壓對應值 0 or 1  
+   
   範本：https://scratch.mit.edu/projects/724014896/ 
