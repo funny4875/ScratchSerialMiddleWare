@@ -17,7 +17,7 @@ A Middleware support Scratch3 communicate with Arduino by serial port
     - A5: SCL  
     - D2 D3: interrupt 0,1  
     - D10~D13: SPI  
-- scratch3 端雲端變數：  
+- Scratch3 端雲端變數：  
   - 讀取 Arduino port 內容：
     - A0_R:讀取 A0 類比埠之電壓對應值 0-255
     - A1_R:讀取 A1 類比埠之電壓對應值 0-255
@@ -32,4 +32,4 @@ A Middleware support Scratch3 communicate with Arduino by serial port
     - D8_W:寫入 D8 數位 電壓對應值 0 or 1  
 
    
-  scratch3 範本：https://scratch.mit.edu/projects/724014896/ 
+  Scratch3 範本：https://scratch.mit.edu/projects/724014896/ 
