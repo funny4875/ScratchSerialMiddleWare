@@ -12,9 +12,22 @@ A Middleware support Scratch3 communicate with Arduino by serial port
     - D2 D3: interrupt 0,1  
     - D10~D13: SPI  
   - 輸出：  
-    - PWM 輸出埠 D5,D6,D9  
-    - 數位 輸出埠 D7,D8,D9   
+    - PWM 輸出埠 D5,D6,D9  (0-255)
+    - 數位 輸出埠 D7,D8   (0 or 1)
   - 輸入：  
     - 類比埠 A0,A1,A2,A3 (0~255)  
-    - 數位埠 D4 (0,1)  
--scratch端：  
+    - 數位埠 D4 (0 or 1)  
+- scratch端雲端變數：  
+  - 讀取 Arduino port 內容：
+    - A0_R:讀取 A0 類比埠之電壓對應值 0-255
+    - A1_R:讀取 A1 類比埠之電壓對應值 0-255
+    - A2_R:讀取 A2 類比埠之電壓對應值 0-255
+    - A3_R:讀取 A3 類比埠之電壓對應值 0-255
+    - D4_R:讀取 D4 數位埠之電壓對應值 0 or 1
+  - 寫入 Arduino port :
+    - D5_W:
+    - D6_W:
+    - D9_W:
+    - D7_W:
+    - D8_W:
+  範本：https://scratch.mit.edu/projects/724014896/ 
