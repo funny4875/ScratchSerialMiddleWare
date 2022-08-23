@@ -6,11 +6,6 @@ A Middleware support Scratch3 communicate with Arduino by serial port
 藉此可和 Arduino、nodeMCU 等開發板做互動。  
 目前提供 Arduino 之韌體互動規格如下：  
 - Arduino端：  
-  - 保留下列通訊埠  
-    - A4: SDA  
-    - A5: SCL  
-    - D2 D3: interrupt 0,1  
-    - D10~D13: SPI  
   - 輸出：  
     - PWM 輸出埠 D5,D6,D9  (0-255)
     - 數位 輸出埠 D7,D8   (0 or 1)
@@ -30,5 +25,10 @@ A Middleware support Scratch3 communicate with Arduino by serial port
     - D9_W:寫入 D9 PWM 電壓對應值 0~255
     - D7_W:寫入 D7 數位 電壓對應值 0 or 1
     - D8_W:寫入 D8 數位 電壓對應值 0 or 1  
+- 保留下列有特殊通訊埠  
+    - A4: SDA  
+    - A5: SCL  
+    - D2 D3: interrupt 0,1  
+    - D10~D13: SPI  
    
   範本：https://scratch.mit.edu/projects/724014896/ 
