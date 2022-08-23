@@ -11,7 +11,7 @@ A Middleware support Scratch3 communicate with Arduino by serial port
     - 數位 輸出埠 D7,D8   (0 or 1)
   - 輸入：  
     - 類比埠 A0,A1,A2,A3 (0~255)  
-    - 數位埠 D4 (0 or 1)  
+    - 數位埠 D4 (0 or 1)  使用 INPUT_PULLUP(內接高壓與上拉電阻)  
   - 保留下列有特殊通訊埠  
     - A4: SDA  
     - A5: SCL  
