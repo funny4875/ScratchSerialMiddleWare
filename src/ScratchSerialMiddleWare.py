@@ -7,7 +7,7 @@ username = "ccsh_ky"
 password = "123456987" 
 projectID = 724014896
 COMport = "COM6"
-inputVARs='A0_R,D4_R'
+inputVARs='A0_R,D4_R'     #規定欲讀取的Arduinoport
 import sys
 
 if len(sys.argv)>5:
@@ -75,3 +75,4 @@ while True:
     serialPort.flush()
     time.sleep(0.1)
 print('end')
+
