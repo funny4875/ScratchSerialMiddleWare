@@ -13,7 +13,6 @@
 int i;
 void setup()
 {
-  analogReference (DEFAULT);
   //for analogRead
   pinMode(A0, INPUT);
   pinMode(A1, INPUT);
@@ -21,13 +20,6 @@ void setup()
   pinMode(A3, INPUT);
   //port for digitalRead
   pinMode(D4, INPUT_PULLUP);
-  /*
-  保留下列通訊埠
-  A4: SDA
-  A5: SCL
-  D2 D3: interrupt 0,1
-  D10~D13: SPI
-  */
   //PWM for analogWrite
   pinMode(D5, OUTPUT);
   pinMode(D6, OUTPUT);
@@ -35,7 +27,19 @@ void setup()
   //port for digitalWrite
   pinMode(D7, OUTPUT);
   pinMode(D8, OUTPUT);
+  /*
+  保留下列通訊埠且全部預設為低電位(可充當GND)
+  A4: SDA
+  A5: SCL
+  D2 D3: interrupt 0,1
+  D10~D13: SPI
+  */
+  analogWrite(A4,0);
+  analogWrite(A5,0);
+  analogWrite(D2,0);
+  analogWrite(D3,0);
   Serial.begin(9600);
+  //啟動前閃三次
   for(i=0;i<2;i++){analogWrite(D13,255);delay(500);analogWrite(D13,0); delay(500);}
 }
 int tag;
