@@ -12,7 +12,7 @@ A Middleware support Scratch3 communicate with Arduino by serial port
   - 輸入：  
     - 類比埠 A0,A1,A2,A3 (0~255)  
     - 數位埠 D4 (0 or 1)  使用 INPUT_PULLUP(內接高壓與上拉電阻)  
-  - 保留下列有特殊通訊埠  
+  - 保留下列有特殊通訊埠並將他們預設為0，可充當GND使用  
     - A4: SDA  
     - A5: SCL  
     - D2 D3: interrupt 0,1  
@@ -33,3 +33,4 @@ A Middleware support Scratch3 communicate with Arduino by serial port
 
    
   Scratch3 範本：https://scratch.mit.edu/projects/724014896/ 
+  
