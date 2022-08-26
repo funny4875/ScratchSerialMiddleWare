@@ -17,6 +17,11 @@ A Middleware support Scratch3 communicate with Arduino by serial port
     - A5: SCL  
     - D2 D3: interrupt 0,1  
     - D10~D13: SPI  
+- PC 端：  
+  中介程式參數說明如下：
+  - ScratchSerialMiddleWare.exe <使用者名稱> <密碼> <scratch專案編號> <連接Arduino序列埠> <可讀入雲端變數列表>
+  ex: ScratchSerialMiddleWare.exe ccsh_ky 123456987 724014896 COM6 A0_R,A1_R,D4_R  
+  
 - Scratch3 端雲端變數：  
   - 讀取 Arduino port 內容：
     - A0_R:讀取 A0 類比埠之電壓對應值 0-255
